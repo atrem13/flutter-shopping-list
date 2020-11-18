@@ -38,13 +38,6 @@ class _HomeState extends State<Home> {
     Cart(id: 'DW2', title: 'Shampoo', harga: 17000, qty: 2),
   ];
 
-  // void _openModal(BuildContext context) {
-  //   showModalBottomSheet(
-  //       context: context,
-  //       builder: (_) {
-  //         return AddNewItem(_addNewItem);
-  //       });
-  // }
   void _openModal(BuildContext context) {
     showModalBottomSheet(
         context: context,
@@ -53,13 +46,6 @@ class _HomeState extends State<Home> {
         });
   }
 
-  // void _addNewItem(String title, double harga, int qty) {
-  //   final newItem = Cart(
-  //       id: DateTime.now().toString(), title: title, harga: harga, qty: qty);
-  //   setState(() {
-  //     _carts.add(newItem);
-  //   });
-  // }
   void _addNewItem(String title, double harga, int qty) {
     final newItem = Cart(
       id: DateTime.now().toString(),
@@ -73,11 +59,6 @@ class _HomeState extends State<Home> {
     });
   }
 
-  // void _resetCarts() {
-  //   setState(() {
-  //     _carts.clear();
-  //   });
-  // }
   void _resetCarts() {
     setState(() {
       _carts.clear();
@@ -108,10 +89,6 @@ class _HomeState extends State<Home> {
           ],
         ),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   child: Icon(Icons.add),
-      //   onPressed: () => _openModal(context),
-      // ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add),
         onPressed: () => _openModal(context),
